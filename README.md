@@ -2,10 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-In the project directory, you can run:
-
+## Usage
 To use this component render it as follows with some instructions mentioned below on what props to pass:  
 
   <ThemeContainer theme="dark">
@@ -21,6 +18,9 @@ const items = {
   "category_1": [{ title: "hopper", text: "Grace Hopper was an American computer scienntist and a US navy admiral" }, { title: "holberton", text: "Grace Hopper was a US computer scienntist and a navy admiral" }],
   "category_2": [{ title: "antonelli", text: "Grace Hopper was a US computer scienntist and a navy admiral" }, { title: "bartik", text: "Grace Hopper was a US computer scienntist and a navy admiral" }, { title: "teitulbaum", text: "Grace Hopper was a US computer scienntist and a navy admiral" }, { title: "Bartik", text: "Grace Hopper was a US computer scienntist and a navy admiral" }]
 }
+## Available Scripts
+
+In the project directory, you can run:
 
 
 ### `npm start`
