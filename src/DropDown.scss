@@ -1,0 +1,73 @@
+@import './themes/params.scss';
+@import "./themes/theme.scss";
+
+.parent {
+  position             : absolute;
+  top                  : 25%;
+  left                 : 45%;
+  // display              : grid;
+  // grid-template-columns: 1fr 1fr;
+  // /* fraction*/
+}
+
+.column-data {
+  display       : flex;
+  flex-direction: column;
+}
+
+.selectBtn {
+  width        : 100%;
+  margin       : auto;
+  max-width    : 125px;
+  border-radius: 4px;
+  border       : 0.5px solid $border;
+  overflow     : visible;
+  max-height   : 32px;
+  position     : relative;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.dropDown {
+  display : none;
+  position: absolute;
+  top     : 100%;
+  left    : 0;
+
+  border-radius: 4px;
+  border       : 0.5px solid $border;
+
+  text-align: left;
+  z-index   : 1;
+}
+
+.selectBtn:focus .dropDown,
+.selectBtn:focus-within .dropDown {
+  display: block;
+}
+
+.divider {
+  border-bottom: 1px solid $tertiary
+}
+
+.check {
+  background-color: transparent;
+}
+
+.individual-dropdown {
+  display    : flex;
+  align-items: flex-start;
+  line-height: 1;
+
+  &:hover {
+    background-color: $hover;
+  }
+}
+
+div.individual-dropdown:hover {
+  background-color: $hover;
+  cursor          : pointer;
+
+}
