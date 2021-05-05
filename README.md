@@ -5,9 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Usage
 To use this component render it as follows with some instructions mentioned below on what props to pass:  
 
-  <ThemeContainer theme="dark">
+  `<ThemeContainer theme="dark">
      <DropDown detailedMenu={true} items={items}/>
-   </ThemeContainer>
+   </ThemeContainer>`
 
 -- theme value shows string which can be kept either "dark" or "light"
 -- detailed Menu shows whether you want to show the detailed Menu or not, it can be kept true of false
