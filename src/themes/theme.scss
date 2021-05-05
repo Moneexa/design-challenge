@@ -1,0 +1,120 @@
+@import "./params.scss";
+
+$primary: var(--primary);
+$secondary: var(--secondary);
+$tertiary: var(--tertiary);
+
+$primary-text: var(--primary-text);
+
+$hover: var(--hover);
+$secondary-text: var(--secondary-text);
+$focus-primary-text: var(--focus-primary-text);
+$focus-secondary-text: var(--focus-secondary-text);
+
+
+.bg-primary {
+    background-color   : $primary;
+    // color           : $hover-text;
+}
+
+.bg-secondary {
+    background-color   : $secondary;
+    // color           : $text-color
+}
+
+.bg-tertiary {
+    background-color   : $tertiary;
+    // color           : $text-color
+}
+
+.text-primary {
+    color: $primary-text
+}
+
+.text-secondary {
+    color              : $secondary-text;
+    // background-color: transparent;
+}
+
+.focus-text-primary {
+    color: $focus-primary-text
+}
+
+.focus-text-secondary {
+    color: $focus-secondary-text
+}
+
+
+$spaces: ("5": $s-5,
+    "10": $s-10,
+    "15": $s-15,
+    "20":$s-20,
+    "25":$s-25,
+    "30":$s-30,
+    "40":$s-40,
+    "50":$s-50,
+    "60":$s-60,
+    "70":$s-70);
+
+@each $number,
+$space in $spaces {
+    .m-#{$number} {
+        margin: $space;
+    }
+
+    .mx-#{$number} {
+        margin-left : $space;
+        margin-right: $space;
+    }
+
+    .my-#{$number} {
+        margin-top   : $space;
+        margin-bottom: $space
+    }
+
+    .ml-#{$number} {
+        margin-left: $space
+    }
+
+    .mr-#{$number} {
+        margin-right: $space
+    }
+
+    .mt-#{$number} {
+        margin-top: $space;
+    }
+
+    .mb-#{$number} {
+        margin-bottom: $space;
+    }
+
+    .p-#{$number} {
+        padding: $space;
+    }
+
+    .px-#{$number} {
+        padding-left : $space;
+        padding-right: $space;
+    }
+
+    .py-#{$number} {
+        padding-top   : $space;
+        padding-bottom: $space
+    }
+
+    .pl-#{$number} {
+        padding-left: $space
+    }
+
+    .pr-#{$number} {
+        padding-right: $space
+    }
+
+    .pt-#{$number} {
+        padding-top: $space;
+    }
+
+    .pb-#{$number} {
+        padding-bottom: $space;
+    }
+}
