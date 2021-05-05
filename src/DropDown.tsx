@@ -18,7 +18,6 @@ function DropDown({ detailedMenu, items }: { detailedMenu: boolean, items: Item}
   const [selectedIndex, setSelectedIndex] = useState(-1);
 
   const handleIndividualItem = (value: any, selectedCategory: string, selectedIndex: number) => {
-    console.log("here")
     setSelectedItem(value)
     setSelectedCategory(selectedCategory);
     setSelectedIndex(selectedIndex)
