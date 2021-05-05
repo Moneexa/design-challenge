@@ -1,10 +1,27 @@
-# Getting Started with Create React App
+# Getting Started with Design Challenge created with create react app typescript template
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+To use this component render it as follows with some instructions mentioned below on what props to pass:  
+
+##  `<ThemeContainer theme="dark">
+     <DropDown detailedMenu={true} items={items}/>
+   </ThemeContainer>`
+
+-- theme value shows string which can be kept either "dark" or "light"
+-- detailed Menu shows whether you want to show the detailed Menu or not, it can be kept true of false
+
+--items consist of object containing list of values to show in dropdown. logically related values are kept in an array. e.g
+
+## `const items = {
+  "category_1": [{ title: "hopper", text: "Grace Hopper was an American computer scienntist and a US navy admiral" }, { title: "holberton", text: "Grace Hopper was a US computer scienntist and a navy admiral" }],
+  "category_2": [{ title: "antonelli", text: "Grace Hopper was a US computer scienntist and a navy admiral" }, { title: "bartik", text: "Grace Hopper was a US computer scienntist and a navy admiral" }, { title: "teitulbaum", text: "Grace Hopper was a US computer scienntist and a navy admiral" }, { title: "Bartik", text: "Grace Hopper was a US computer scienntist and a navy admiral" }]
+}`
+
 
 ### `npm start`
 
@@ -13,6 +30,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
+
 
 ### `npm test`
 
